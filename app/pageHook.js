@@ -23,9 +23,9 @@ const people = [
   {
     id: 1,
     name: "JOIN NOW",
-    designation: "How bout u join my fuqin waitlist 😂",
+    designation: "How bout u give us a follow on linkedin as well ",
     image: "/img/email.png",
-    href: "https://instagram.com/Joscriptt ",
+    href: "https://linking ",
   },
 ];
 
@@ -121,14 +121,17 @@ function PageHook() {
       />
       <section className=" mt-5  ">
         <div className="space-y-4 ">
+          
           <div className="space-y-2 text-center">
             <div className="flex justify-center">
+              
               {/* You can use video here as well */}
+              
               <Image
                 width={128}
                 height={128}
                 alt="shake head"
-                src={"/img/shake.gif"}
+                src={"/img/main.gif"}
                 className="w-32"
               />
             </div>
@@ -159,7 +162,9 @@ function PageHook() {
                     />
                   </span>
                   <span className="bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700">
-                    Templates & Resources!
+                  Tired of the endless grind of coming up with social media content?  PonchoAI is here to rescue you from content creation fatigue!
+
+
                   </span>
                 </div>
               </div>
@@ -168,12 +173,10 @@ function PageHook() {
               </p> */}
             </div>
             <h1 className="text-3xl font-bold  sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-800 capitalize md:max-w-2xl lg:max-w-3xl mx-auto ">
-              Join The Waitlist for My Courses Today!
+            Join the PonchoAI Waiting List!
             </h1>
             <p className="max-w-[600px]  leading-7 text-center text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
-              Discover an Array of Incredible Courses and Be Prepared for an
-              Exciting Wave of New Resources on the Horizon. Sign up to Our
-              Waitlist to be notified when we launch!
+            Be among the first to experience PonchoAI. Sign up now to join our exclusive waiting list and receive updates on our launch, special offers, and more!
             </p>
             {errors.email && (
               <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
@@ -301,7 +304,7 @@ function PageHook() {
           </div>
           <div className="p-3 rounded-lg border dark:border-white/10 border-neutral-400 dark:border-opacity-10 relative top-14 sm:top-14 lg:top-24 max-w-xl mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
             <p className=" text-zinc-500 dark:text-zinc-100">
-              Get ready to redefine your email experience.
+              Get ready to change the way you grow on social media!.
             </p>
             <Link
               onClick={() => setIsOpen(true)}
@@ -359,11 +362,10 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
 
             <div className="relative z-10">
               <p className="lg:text-justify  leading-6 mb-6">
-                I'm doing a little Giveaway on the Launch of this Template
-                Website by December. So If you sign up today, which will only
+                I'm doing a little Giveaway on the Launch of poncho. So If you sign up today, which will only
                 take a few seconds and 1 click, you'll automatically be
-                participated in our giveaway and 10 lucky people will get free
-                access to one of Our Premium Templates, free of cost!
+                participated in our beta and 100 lucky people will get free
+                access to poncho for 6 months!
               </p>
               <div className="flex gap-2">
                 <button
