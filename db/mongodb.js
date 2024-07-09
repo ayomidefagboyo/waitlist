@@ -4,7 +4,7 @@ const connectDB = async () => {
   await mongoose;
   mongoose
     .set("strictQuery", true)
-    .connect("mongodb://127.0.0.1:27017/email", {
+    .connect("mongodb+srv://ayomide:ayomide123@cluster0.2jvfyk7.mongodb.net/", {
       useNewUrlParser: "true",
       useUnifiedTopology: "true",
     })

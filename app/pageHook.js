@@ -8,7 +8,11 @@ import { TbArrowsJoin2 } from "react-icons/tb";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-
+import {
+  PiTwitterLogoThin,
+  PiTiktokLogoThin,
+  PiLinkedinLogoThin ,
+} from "react-icons/pi";
 import {
   AnimatePresence,
   motion,
@@ -18,6 +22,11 @@ import {
 } from "framer-motion";
 
 import Snowfall from "react-snowfall";
+let Icons = [
+  { name: <PiTwitterLogoThin />, href: "https://x.com/ponchoai" },
+  { name: <PiTiktokLogoThin />, href: "https://tiktok.com/ponchoai" },
+  { name: <PiLinkedinLogoThin  />, href: "https://linkedin.com/company/ponchoai" },
+];
 
 const people = [
   {
@@ -25,7 +34,7 @@ const people = [
     name: "JOIN NOW",
     designation: "How bout u give us a follow on linkedin as well ",
     image: "/img/email.png",
-    href: "https://linking ",
+    href: "https://www.linkedin.com/company/ponchoai/",
   },
 ];
 
@@ -131,7 +140,7 @@ function PageHook() {
                 width={128}
                 height={128}
                 alt="shake head"
-                src={"/img/main.gif"}
+                src={"/img/skate.gif"}
                 className="w-32"
               />
             </div>
@@ -404,7 +413,7 @@ const RecievedModal = ({ isOpenModel, setIsOpenModel }) => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{
-              duration: 0.2,
+              duration: 0.4,
               stiffness: "20",
               type: "just",
               damping: 100,
@@ -434,7 +443,7 @@ const RecievedModal = ({ isOpenModel, setIsOpenModel }) => {
                   onClick={() => setIsOpenModel(false)}
                   className=" flex justify-center gap-x-3 items-center bg-transparent bg-white text-black hover:bg-neutral-300  transition-colors duration-200 dark:text-black font-semibold w-60 mx-auto py-2 rounded px-8"
                 >
-                  <span>Happy Coding</span>
+                  <span>Thank You for Signing Up! </span>
                   <Image
                     width={7}
                     height={7}

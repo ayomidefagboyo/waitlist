@@ -9,8 +9,8 @@ import { useTheme } from "next-themes";
 
 import {
   PiTwitterLogoThin,
-  PiInstagramLogoThin,
-  PiGithubLogoLight,
+  PiTiktokLogoThin,
+  PiLinkedinLogoThin ,
 } from "react-icons/pi";
 
 import {
@@ -80,33 +80,33 @@ let textvariant = {
 
 let Icons = [
   { name: <PiTwitterLogoThin />, href: "https://x.com/ponchoai" },
-  { name: <PiInstagramLogoThin />, href: "https://tiktok.com/ponchoai" },
-  { name: <PiGithubLogoLight />, href: "https://github.com/Joscriptt" },
+  { name: <PiTiktokLogoThin />, href: "https://tiktok.com/ponchoai" },
+  { name: <PiLinkedinLogoThin  />, href: "https://linkedin.com/company/ponchoai" },
 ];
 
-const people = [
+/*const people = [
   {
     id: 1,
-    name: "INSTAGRAM",
-    designation: "@Joscriptt",
-    image: "/img/time.png",
-    href: "https://instagram.com/Joscriptt ",
+    name: "LINKEDIN",
+    designation: "@ponchoai",
+    image: "/img/linkedin.png",
+    href: "https://www.linkedin.com/company/ponchoai/ ",
   },
   {
     id: 2,
     name: "TWITTER",
-    designation: "@Joenaldo",
-    image: "/img/alarm.png",
-    href: "https://twitter.com/Joenaldo",
+    designation: "@ponchoai",
+    image: "/img/twitter.png",
+    href: "https://twitter.com/ponchoai",
   },
   {
     id: 3,
-    name: "GITHUB",
-    designation: "Joscriptt",
-    image: "/img/party.png",
-    href: "https://github.com/Joscriptt",
+    name: "TIKTOK",
+    designation: "ponchoai",
+    image: "/img/tiktok.png",
+    href: "https://tiktok.com/ponchoai",
   },
-];
+];*/
 
 function Headpage() {
   const [open, cycleOpen] = useCycle(false, true);
@@ -145,13 +145,13 @@ function Headpage() {
         <div className="flex gap-x-3 items-center">
           <Switch checked={checked} setChecked={setChecked} />
           <p className="text-sm dark:text-white hidden md:block">
-            hey thank you for giving this a shot!
+           Toggle this button for a surprise transformation!
           </p>
         </div>
 
         {/* come back to fix this later */}
 
-        {/* <div className="flex   gap-x-6 ">
+         <div className="flex   gap-x-6 ">
           {Icons.map((each) => (
             <div
               key={each.name}
@@ -160,10 +160,11 @@ function Headpage() {
               <Link href={each.href}>{each.name}</Link>
             </div>
           ))}
-        </div> */}
-
+        </div> 
+       
+        {/*
         <div className="flex flex-row gap-x-4  ">
-          {people.map((testimonial, idx) => (
+          {Icons.map((testimonial, idx) => (
             <div
               className=" relative group"
               key={testimonial.name}
@@ -216,6 +217,7 @@ function Headpage() {
             </div>
           ))}
         </div>
+        */}
       </div>
     </>
   );
